@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(Remove-Item -Recurse -Force \"C:\\Users\\buren\\project\\linkify\\src\\app\\(marketing)\\pricing\")",
+      "Bash(pnpm build)",
+      "Bash(dir:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
