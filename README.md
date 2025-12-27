@@ -1,81 +1,84 @@
-<img src="https://github.com/user-attachments/assets/e1e0fe16-21f4-44c8-a22d-39b4494433a1" alt="Link Management Logo" width="50" height="50">
+# TabQ - Tab Manager for Chrome
 
-# 🔗 Linkify - The Link Management Platform for Businesses(Landing Page)
+A modern landing page for TabQ, a Chrome extension that helps you organize tabs into beautiful, customizable workspaces.
 
-<!-- <img src="https://github.com/user-attachments/assets/deab03fd-4234-44c3-a6ad-484c4a1a02a1" alt="Linkify Thubmnail"> -->
-<img src="https://github.com/user-attachments/assets/ee867e8e-7871-4289-bd56-3eef40adb9b2" alt="Linkify Thumbnail" style="border-radius: 50px;" width="1280">
+## Features
 
+- **Workspace Organization** - Create beautiful workspaces to organize your tabs
+- **Smart Tab Management** - Easily manage, access, and organize all your browser tabs
+- **Clean New Tab Page** - Transform your new tab page into a powerful command center
+- **Free to Use** - All core features are completely free
 
-## 🌟 Introduction
-Linkify is an innovative link management software designed to help you shorten, track, and optimize your links effortlessly. Built with React, Node.js, and MongoDB, Linkify provides powerful analytics and user-friendly features to enhance your link-sharing experience.
+## Tech Stack
 
-## 🚀 Features
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** Shadcn UI, Magic UI, Aceternity UI
+- **Animations:** Framer Motion
+- **Forms:** React Hook Form + Zod
 
-- **Link Shortening:** Easily create short links for better sharing.
-- **Analytics Dashboard:** Track clicks, user engagement, and performance metrics.
-- **Customizable Links:** Create branded links that reflect your identity.
-- **AI-Powered Suggestions:** Get smart recommendations for link optimization.
+## Getting Started
 
-## 🔗 Live Preview
+### Prerequisites
 
-Check out the live demo of Linkify here: [Live Preview](http://Linkify-demo.vercel.app)
+- Node.js 18+
+- pnpm
 
-## 🎥 Watch Demo on YouTube
-
-Check out the tutorial to see how this link management system was built: [Watch the Tutorial](https://youtu.be/3_sZPAfVR_U) 💻 
-
-## 💻 Tech Stack
-
-* Next.js
-* Tailwind CSS
-* Shadcn UI
-* Magic UI
-* Aceternity UI
-* Prisma
-* MongoDB
-* Clerk
-* React Hook Form
-
-## 🛠️ Installation
-To run Linkify locally, follow these steps:
+### Installation
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/Shreyas-29/linkify.git
-    ```
+   ```bash
+   git clone https://github.com/tabq-tabmanger/tabq-landing-page.git
+   cd tabq-landing-page
+   ```
+
 2. Install dependencies:
-    ```bash
-    npm install
-    ```
-3. Set up environment variables in a `.env` file:
-    ```
-   # app
-    NEXT_PUBLIC_APP_DOMAIN=
-    NEXT_PUBLIC_APP_NAME=
+   ```bash
+   pnpm install
+   ```
 
-    # clerk
-    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-    CLERK_SECRET_KEY=
-
-    # database
-    DATABASE_URL=
-    ```
+3. Set up environment variables:
+   ```bash
+   cp .env.example .env
+   ```
 
 4. Run the development server:
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   pnpm dev
+   ```
 
-## ☕ Buy Me a Coffee
-If you enjoy using Linkify, consider supporting my work!  
-[Buy Me a Coffee ☕](https://buymeacoffee.com/shreyas29)
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Scripts
 
-## 💬 Contact
-If you have any questions or feedback, feel free to reach out via [GitHub Issues](https://github.com/Shreyas-29/linkify/issues).
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start development server |
+| `pnpm build` | Build for production |
+| `pnpm start` | Start production server |
+| `pnpm lint` | Run ESLint |
 
----
+## Project Structure
 
-Built with ❤️ by [Shreyas](https://shreyas-sihasane.vercel.app/)
+```
+src/
+├── app/
+│   └── (marketing)/     # Public pages (landing, features, privacy, etc.)
+├── components/
+│   ├── ui/              # UI primitives (Shadcn/Magic UI)
+│   ├── navigation/      # Navbar and Footer
+│   └── global/          # Shared components
+├── utils/
+│   ├── constants/       # App constants
+│   └── functions/       # Utility functions
+└── styles/              # Global styles
+```
+
+## Links
+
+- [Chrome Web Store](https://chromewebstore.google.com/detail/tabq-tab-manager/bbackfjoenepphijbngcjlafamkenbef)
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
