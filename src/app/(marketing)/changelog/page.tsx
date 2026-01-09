@@ -3,6 +3,33 @@ import React from 'react'
 
 const CHANGELOG = [
     {
+        version: "0.0.5",
+        date: "2026-01-08",
+        changes: [
+            // New Features
+            "Edge Browser Support - OAuth and UI now work with Microsoft Edge",
+            "Pinned Tab Support - OpenTabs panel now shows pinned browser tabs",
+            "Bookmark Status Indicator - Shows whether current page is saved in TabQ",
+            "Link Open Behavior Setting - Configure how links open (new tab vs current tab)",
+            "URL Display in Command Menu - Search results now show URLs",
+            "Workspace Memory - Remembers last visited workspace and collection collapse state",
+            "General Settings Navigation - Added entry point for general settings",
+            // Improvements
+            "Multi-select Visual Feedback - Better background highlight when selecting multiple items",
+            "Tab Description Toggle - Removed workspace notes, added per-tab description toggle",
+            "Collection Drag Preview - Uses DragOverlay for smoother drag experience",
+            "Auto-collapse Collections - Collections auto-collapse during drag reorder for cleaner UI",
+            // Bug Fixes
+            "Fixed: Prevent click action when interacting with card buttons",
+            "Fixed: Correct sortKey generation for new tabs",
+            "Fixed: Prevent duplicate workspace creation requests",
+            "Fixed: Prevent CardNotes textarea from losing focus during save",
+            // Developer Experience
+            "Added Playwright E2E testing framework",
+            "Added husky + lint-staged for pre-commit code quality checks",
+        ],
+    },
+    {
         version: "0.0.3",
         date: "2025-12-27",
         changes: [
