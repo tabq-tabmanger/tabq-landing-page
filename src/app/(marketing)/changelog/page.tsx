@@ -3,6 +3,16 @@ import React from 'react'
 
 const CHANGELOG = [
     {
+        version: "0.1.0",
+        date: "2026-01-09",
+        changes: [
+            "Change local backup to hourly with 7-day retention",
+            "Add Fuse.js fuzzy search and Collection highlight navigation",
+            "Improve BackgroundSync error logging",
+            "Fix Zod v4 CSP eval error (using jitless mode)",
+        ],
+    },
+    {
         version: "0.0.5",
         date: "2026-01-08",
         changes: [
