@@ -3,6 +3,19 @@ import React from 'react'
 
 const CHANGELOG = [
     {
+        version: "0.1.1",
+        date: "2026-01-13",
+        changes: [
+            "Fix: Prevent space key from triggering drag in notes",
+            "Fix: Improve drag-and-drop visuals with DragOverlay",
+            "Improve command menu search highlighting with colors",
+            "Refactor: Split contexts and hooks for better separation of concerns",
+            "Redesign command menu page info banner with card layout",
+            "Quick create workspace/collection from search in command menu",
+            "Improve sync flow with manual sync button and deferred initial sync",
+        ],
+    },
+    {
         version: "0.1.0",
         date: "2026-01-09",
         changes: [
