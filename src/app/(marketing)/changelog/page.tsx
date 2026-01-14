@@ -3,6 +3,19 @@ import React from 'react'
 
 const CHANGELOG = [
     {
+        version: "0.1.2",
+        date: "2026-01-14",
+        changes: [
+            "Simplify sync mechanism with hash+version detection",
+            "Make sync mode selection non-blocking for better UX",
+            "Rename Overview tab to Tabs for future extensibility",
+            "Add TabQ branding to command menu footer",
+            "Fix: Refresh search index after adding tab to collection",
+            "Use Google Favicon service for consistent icon fetching",
+            "Fix: Refresh search index immediately after creating workspace/collection",
+        ],
+    },
+    {
         version: "0.1.1",
         date: "2026-01-13",
         changes: [
