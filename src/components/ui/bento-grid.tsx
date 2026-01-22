@@ -76,8 +76,8 @@ export const CARDS = [
     },
     {
         Icon: GithubIcon,
-        name: "GitHub Gist 同步",
-        description: "使用 GitHub 登录，数据通过 Gist 安全同步，完全由您掌控。",
+        name: "GitHub Gist sync",
+        description: "Sign in with GitHub and sync your data securely via Gist. You own your data.",
         className: "col-span-3 lg:col-span-1",
         href: "#",
         cta: "Learn more",
@@ -96,8 +96,8 @@ export const CARDS = [
     },
     {
         Icon: CloudIcon,
-        name: "Google Drive 同步",
-        description: "使用 Google 登录，数据存储在您的 Google Drive，隐私有保障。",
+        name: "Google Drive sync",
+        description: "Sign in with Google and store your data in your own Google Drive. Privacy guaranteed.",
         className: "col-span-3 lg:col-span-2",
         href: "#",
         cta: "Learn more",
@@ -116,8 +116,8 @@ export const CARDS = [
     },
     {
         Icon: ShieldCheckIcon,
-        name: "数据完全由您掌控",
-        description: "无论选择哪种同步方式，您的数据始终存储在您自己的账户中，我们不会访问您的任何数据。",
+        name: "You own your data",
+        description: "No matter which sync method you choose, your data is always stored in your own account. We never access your data.",
         className: "col-span-3 lg:col-span-2",
         href: "#",
         cta: "Learn more",
@@ -125,18 +125,18 @@ export const CARDS = [
             <div className="absolute right-10 top-10 flex flex-col gap-2 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105">
                 <div className="flex items-center gap-2 rounded-md border border-green-900/50 bg-green-950/30 px-3 py-2 text-green-400">
                     <ShieldCheckIcon className="h-5 w-5" />
-                    <span className="text-sm">您的数据，您做主</span>
+                    <span className="text-sm">Your data, your control</span>
                 </div>
                 <div className="text-xs text-neutral-500 max-w-[200px]">
-                    端到端加密 · 零知识架构 · 开源透明
+                    Zero-knowledge · Open source · Full transparency
                 </div>
             </div>
         ),
     },
     {
         Icon: CalendarIcon,
-        name: "更多同步方式 Coming Soon",
-        description: "新的同步器正在开发中，将在 v0.3.0+ 版本发布，敬请期待！",
+        name: "More sync options coming",
+        description: "New sync providers are in development and will be released in v0.3.0+. Stay tuned!",
         className: "col-span-3 lg:col-span-1",
         href: "#",
         cta: "Learn more",
@@ -146,7 +146,7 @@ export const CARDS = [
                     Coming in v0.3.0+
                 </div>
                 <div className="text-xs text-neutral-500 text-center">
-                    更多同步选项<br/>即将推出
+                    More sync options<br/>coming soon
                 </div>
             </div>
         ),
