@@ -2,7 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from "@/utils";
-import { ArrowRightIcon, CalendarIcon, CloudIcon, GithubIcon, LayoutGridIcon, SearchIcon, ShieldCheckIcon, WaypointsIcon } from "lucide-react";
+import { ArrowRightIcon, CalendarIcon, CloudIcon, GithubIcon, HistoryIcon, LayoutGridIcon, LinkIcon, SearchIcon, ShieldCheckIcon, WaypointsIcon } from "lucide-react";
 import { Icons } from "@/components/global/icons";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -72,6 +72,60 @@ export const CARDS = [
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (
             <Integrations className="absolute right-2 pl-28 md:pl-0 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+        ),
+    },
+    {
+        Icon: HistoryIcon,
+        name: "Search anywhere",
+        description: "Search your saved collections and browsing history from any page. Never lose a tab again.",
+        href: "#",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-1",
+        background: (
+            <div className="absolute right-4 top-10 flex flex-col gap-2 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105">
+                <div className="rounded-lg border border-border bg-neutral-900 p-2 w-[180px]">
+                    <Input placeholder="Search..." className="h-8 text-xs" />
+                    <div className="mt-2 space-y-1 text-xs">
+                        <div className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-muted text-neutral-400">
+                            <WaypointsIcon className="h-3 w-3" />
+                            <span>Collections</span>
+                        </div>
+                        <div className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-muted text-neutral-400">
+                            <HistoryIcon className="h-3 w-3" />
+                            <span>History</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ),
+    },
+    {
+        Icon: LinkIcon,
+        name: "Page aliases",
+        description: "Create custom shortcuts to jump to any page instantly. Type an alias and go.",
+        href: "#",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-2",
+        background: (
+            <div className="absolute right-10 top-10 flex flex-col gap-3 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105">
+                <div className="space-y-2">
+                    <div className="flex items-center gap-3 rounded-lg border border-border bg-neutral-900 px-4 py-2">
+                        <code className="text-sm text-blue-400">gh</code>
+                        <span className="text-neutral-600">→</span>
+                        <span className="text-xs text-neutral-400">github.com</span>
+                    </div>
+                    <div className="flex items-center gap-3 rounded-lg border border-border bg-neutral-900 px-4 py-2">
+                        <code className="text-sm text-blue-400">mail</code>
+                        <span className="text-neutral-600">→</span>
+                        <span className="text-xs text-neutral-400">gmail.com</span>
+                    </div>
+                    <div className="flex items-center gap-3 rounded-lg border border-border bg-neutral-900 px-4 py-2">
+                        <code className="text-sm text-blue-400">docs</code>
+                        <span className="text-neutral-600">→</span>
+                        <span className="text-xs text-neutral-400">docs.google.com</span>
+                    </div>
+                </div>
+            </div>
         ),
     },
     {
