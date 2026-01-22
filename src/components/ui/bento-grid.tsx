@@ -2,7 +2,8 @@ import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from "@/utils";
-import { ArrowRightIcon, CalendarIcon, LayoutGridIcon, SearchIcon, WaypointsIcon } from "lucide-react";
+import { ArrowRightIcon, CalendarIcon, CloudIcon, GithubIcon, HistoryIcon, LayoutGridIcon, LinkIcon, SearchIcon, ShieldCheckIcon, WaypointsIcon } from "lucide-react";
+import { Icons } from "@/components/global/icons";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
@@ -74,18 +75,134 @@ export const CARDS = [
         ),
     },
     {
-        Icon: CalendarIcon,
-        name: "Dark mode",
-        description: "Easy on the eyes with automatic theme switching.",
+        Icon: HistoryIcon,
+        name: "Search anywhere",
+        description: "Search your saved collections and browsing history from any page. Never lose a tab again.",
+        href: "#",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-1",
+        background: (
+            <div className="absolute right-4 top-10 flex flex-col gap-2 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105">
+                <div className="rounded-lg border border-border bg-neutral-900 p-2 w-[180px]">
+                    <Input placeholder="Search..." className="h-8 text-xs" />
+                    <div className="mt-2 space-y-1 text-xs">
+                        <div className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-muted text-neutral-400">
+                            <WaypointsIcon className="h-3 w-3" />
+                            <span>Collections</span>
+                        </div>
+                        <div className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-muted text-neutral-400">
+                            <HistoryIcon className="h-3 w-3" />
+                            <span>History</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ),
+    },
+    {
+        Icon: LinkIcon,
+        name: "Page aliases",
+        description: "Create custom shortcuts to jump to any page instantly. Type an alias and go.",
+        href: "#",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-2",
+        background: (
+            <div className="absolute right-10 top-10 flex flex-col gap-3 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105">
+                <div className="space-y-2">
+                    <div className="flex items-center gap-3 rounded-lg border border-border bg-neutral-900 px-4 py-2">
+                        <code className="text-sm text-blue-400">gh</code>
+                        <span className="text-neutral-600">→</span>
+                        <span className="text-xs text-neutral-400">github.com</span>
+                    </div>
+                    <div className="flex items-center gap-3 rounded-lg border border-border bg-neutral-900 px-4 py-2">
+                        <code className="text-sm text-blue-400">mail</code>
+                        <span className="text-neutral-600">→</span>
+                        <span className="text-xs text-neutral-400">gmail.com</span>
+                    </div>
+                    <div className="flex items-center gap-3 rounded-lg border border-border bg-neutral-900 px-4 py-2">
+                        <code className="text-sm text-blue-400">docs</code>
+                        <span className="text-neutral-600">→</span>
+                        <span className="text-xs text-neutral-400">docs.google.com</span>
+                    </div>
+                </div>
+            </div>
+        ),
+    },
+    {
+        Icon: GithubIcon,
+        name: "GitHub Gist sync",
+        description: "Sign in with GitHub and sync your data securely via Gist. You own your data.",
         className: "col-span-3 lg:col-span-1",
         href: "#",
         cta: "Learn more",
         background: (
-            <Calendar
-                mode="single"
-                selected={new Date(2022, 4, 11, 0, 0, 0)}
-                className="absolute right-0 top-10 origin-top rounded-md border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
-            />
+            <div className="absolute right-4 top-10 flex flex-col items-center gap-2 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105">
+                <div className="flex items-center gap-2 rounded-lg border border-border bg-neutral-900 px-4 py-3">
+                    <GithubIcon className="h-6 w-6 text-neutral-300" />
+                    <span className="text-sm text-neutral-300">Login with GitHub</span>
+                </div>
+                <div className="flex items-center gap-1 text-xs text-neutral-500">
+                    <CloudIcon className="h-4 w-4" />
+                    <span>Sync via Gist</span>
+                </div>
+            </div>
+        ),
+    },
+    {
+        Icon: CloudIcon,
+        name: "Google Drive sync",
+        description: "Sign in with Google and store your data in your own Google Drive. Privacy guaranteed.",
+        className: "col-span-3 lg:col-span-2",
+        href: "#",
+        cta: "Learn more",
+        background: (
+            <div className="absolute right-10 top-10 flex flex-col items-center gap-3 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105">
+                <div className="flex items-center gap-3 rounded-lg border border-border bg-neutral-900 px-5 py-3">
+                    <Icons.google className="h-6 w-6" />
+                    <span className="text-sm text-neutral-300">Login with Google</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-neutral-500">
+                    <CloudIcon className="h-4 w-4" />
+                    <span>Sync to Google Drive</span>
+                </div>
+            </div>
+        ),
+    },
+    {
+        Icon: ShieldCheckIcon,
+        name: "You own your data",
+        description: "No matter which sync method you choose, your data is always stored in your own account. We never access your data.",
+        className: "col-span-3 lg:col-span-2",
+        href: "#",
+        cta: "Learn more",
+        background: (
+            <div className="absolute right-10 top-10 flex flex-col gap-2 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105">
+                <div className="flex items-center gap-2 rounded-md border border-green-900/50 bg-green-950/30 px-3 py-2 text-green-400">
+                    <ShieldCheckIcon className="h-5 w-5" />
+                    <span className="text-sm">Your data, your control</span>
+                </div>
+                <div className="text-xs text-neutral-500 max-w-[200px]">
+                    Zero-knowledge · Open source · Full transparency
+                </div>
+            </div>
+        ),
+    },
+    {
+        Icon: CalendarIcon,
+        name: "More sync options coming",
+        description: "New sync providers are in development and will be released in v0.3.0+. Stay tuned!",
+        className: "col-span-3 lg:col-span-1",
+        href: "#",
+        cta: "Learn more",
+        background: (
+            <div className="absolute right-4 top-10 flex flex-col items-center gap-2 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105">
+                <div className="rounded-full border border-amber-900/50 bg-amber-950/30 px-3 py-1 text-xs text-amber-400">
+                    Coming in v0.3.0+
+                </div>
+                <div className="text-xs text-neutral-500 text-center">
+                    More sync options<br/>coming soon
+                </div>
+            </div>
         ),
     },
 ];
