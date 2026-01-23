@@ -3,6 +3,18 @@ import React from 'react'
 
 const CHANGELOG = [
     {
+        version: "0.3.0",
+        date: "2026-01-24",
+        changes: [
+            "Replace inline edit with dialog for workspace editing",
+            "Add Chrome built-in pages search to command menu",
+            "Enable show notes by default in settings",
+            "Add Command Menu usage guide to help center",
+            "Implement multi-provider sync architecture",
+            "Add Google Drive sync provider with E2E tests",
+        ],
+    },
+    {
         version: "0.1.2",
         date: "2026-01-14",
         changes: [
