@@ -14,7 +14,7 @@ import {
     SheetTrigger
 } from "@/components/ui/sheet";
 import { cn, NAV_LINKS } from "@/utils";
-import { LucideIcon, Menu, X } from "lucide-react";
+import { LucideIcon, Menu, SmartphoneIcon, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from 'react';
 
@@ -96,7 +96,19 @@ const MobileNavbar = () => {
                                     </div>
                                     <span className="text-xs text-muted-foreground">Edge</span>
                                 </Link>
+                                <Link
+                                    href="https://app.tabq.org"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex flex-col items-center gap-2 group"
+                                >
+                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 border border-violet-500/30 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:from-violet-500/30 group-hover:to-fuchsia-500/30">
+                                        <SmartphoneIcon className="w-6 h-6 text-violet-400" />
+                                    </div>
+                                    <span className="text-xs text-muted-foreground">Web App</span>
+                                </Link>
                             </div>
+                            <p className="text-xs text-muted-foreground/70 text-center mt-2">Web App for mobile users</p>
                         </div>
                         <ul className="flex flex-col items-start w-full mt-6">
                             <Accordion type="single" collapsible className="!w-full">
