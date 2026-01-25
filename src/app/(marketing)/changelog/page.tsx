@@ -3,6 +3,31 @@ import React from 'react'
 
 const CHANGELOG = [
     {
+        version: "0.4.0",
+        date: "2026-01-26",
+        changes: [
+            // Kanban & UI
+            "Kanban: Add within-column drag-and-drop sorting",
+            "Kanban: Allow card titles to wrap to two lines",
+            "Kanban: Show notes section in drag overlay to match normal card",
+            "Layout: Add compact mode for card density optimization",
+            // Settings & Icons
+            "Settings: Update theme/sidebar/layout icons to Collection + Tab silhouette style",
+            // Open Tabs
+            "Open Tabs: Display audio indicator icon for tabs playing sound",
+            // Command Menu
+            "Command Menu: Reset selection to first item when search input changes",
+            // Internationalization
+            "i18n: Add internationalization support with English and Chinese",
+            "i18n: Complete Chinese localization for Settings, Command Menu, and Help Center",
+            // Sync & Infrastructure
+            "Fix: Extract provider_token in web OAuth callback for sync",
+            "Add rebuild command and kanban drag-and-drop sorting",
+            // Testing
+            "E2E: Add i18n language switch tests",
+        ],
+    },
+    {
         version: "0.1.2",
         date: "2026-01-14",
         changes: [
