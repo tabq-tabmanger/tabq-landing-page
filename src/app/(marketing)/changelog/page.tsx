@@ -20,11 +20,8 @@ const CHANGELOG = [
             // Internationalization
             "i18n: Add internationalization support with English and Chinese",
             "i18n: Complete Chinese localization for Settings, Command Menu, and Help Center",
-            // Sync & Infrastructure
+            // Bug Fixes
             "Fix: Extract provider_token in web OAuth callback for sync",
-            "Add rebuild command and kanban drag-and-drop sorting",
-            // Testing
-            "E2E: Add i18n language switch tests",
         ],
     },
     {
