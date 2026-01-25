@@ -5,7 +5,7 @@ import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { PROCESS } from "@/utils";
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, SmartphoneIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -90,7 +90,19 @@ const HomePage = async () => {
                                     </div>
                                     <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">Edge</span>
                                 </Link>
+                                <Link
+                                    href="https://app.tabq.org"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex flex-col items-center gap-2 group"
+                                >
+                                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 border border-violet-500/30 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:from-violet-500/30 group-hover:to-fuchsia-500/30 group-hover:border-violet-500/50">
+                                        <SmartphoneIcon className="w-8 h-8 text-violet-400" />
+                                    </div>
+                                    <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">Web App</span>
+                                </Link>
                             </div>
+                            <p className="text-xs text-muted-foreground/70 mt-3">On mobile? Try our Web App - no extension needed</p>
                         </div>
                     </AnimationContainer>
 
@@ -254,7 +266,19 @@ const HomePage = async () => {
                                         </div>
                                         <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">Edge</span>
                                     </Link>
+                                    <Link
+                                        href="https://app.tabq.org"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex flex-col items-center gap-2 group"
+                                    >
+                                        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 border border-violet-500/30 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:from-violet-500/30 group-hover:to-fuchsia-500/30 group-hover:border-violet-500/50">
+                                            <SmartphoneIcon className="w-8 h-8 text-violet-400" />
+                                        </div>
+                                        <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">Web App</span>
+                                    </Link>
                                 </div>
+                                <p className="text-xs text-muted-foreground/70 mt-3">On mobile? Try our Web App - no extension needed</p>
                             </div>
                         </div>
                     </LampContainer>

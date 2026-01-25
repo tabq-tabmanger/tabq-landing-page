@@ -17,7 +17,7 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn, NAV_LINKS } from "@/utils";
-import { BugIcon, ChevronDownIcon, LucideIcon, ZapIcon } from "lucide-react";
+import { BugIcon, ChevronDownIcon, GlobeIcon, LucideIcon, ZapIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
 import MaxWidthWrapper from "../global/max-width-wrapper";
@@ -127,7 +127,7 @@ const Navbar = () => {
                                     <ChevronDownIcon className="size-3.5 ml-1" />
                                 </Button>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end" className="w-44">
+                            <DropdownMenuContent align="end" className="w-48">
                                 <DropdownMenuItem asChild>
                                     <Link
                                         href="https://chromewebstore.google.com/detail/tabq-tab-manager/bbackfjoenepphijbngcjlafamkenbef"
@@ -175,6 +175,20 @@ const Navbar = () => {
                                             </defs>
                                         </svg>
                                         Edge
+                                    </Link>
+                                </DropdownMenuItem>
+                                <DropdownMenuItem asChild>
+                                    <Link
+                                        href="https://app.tabq.org"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 cursor-pointer"
+                                    >
+                                        <GlobeIcon className="w-4 h-4 text-violet-500" />
+                                        <span className="flex flex-col">
+                                            <span>Web App</span>
+                                            <span className="text-[10px] text-muted-foreground">Mobile friendly</span>
+                                        </span>
                                     </Link>
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
